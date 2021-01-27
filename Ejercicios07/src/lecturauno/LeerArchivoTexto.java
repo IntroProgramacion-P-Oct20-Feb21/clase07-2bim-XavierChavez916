@@ -17,7 +17,7 @@ public class LeerArchivoTexto {
         // 1. Se abre el archivo
         try // lee registros del archivo, usando el objeto Scanner
         {
-            Scanner entrada = new Scanner(new File("data/datosTres.txt"));
+            Scanner entrada = new Scanner(new File("data/datos.txt"));
 
             while (entrada.hasNext()) {
                 String linea = entrada.nextLine();
@@ -69,9 +69,11 @@ public class LeerArchivoTexto {
                 String linea = entrada.nextLine();
                 List<String> lista = Arrays.asList(linea.split(";"));
                 ArrayList<String> linea_partes = new ArrayList<>(lista);
-                for (int i = 0; i < linea_partes.size(); i++) {
-                    System.out.println(linea_partes.get(i));
-                }
+                //for (int i = 0; i < linea_partes.size(); i++) {
+                //    System.out.println(linea_partes.get(i));
+                //}
+                System.out.println(linea_partes.get(3));
+                System.out.println("---------------------");
 
             } // fin de while
             entrada.close();

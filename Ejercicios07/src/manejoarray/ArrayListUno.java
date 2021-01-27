@@ -24,10 +24,15 @@ public class ArrayListUno {
         arreglo.add(40);
         arreglo.add(50);
         arreglo.add(60);
+        arreglo.add(7009);
+        arreglo.add(12312);
+        arreglo.add(12122);
         
         for (int i = 0; i < arreglo.size(); i++) {
             System.out.println(arreglo.get(i));
         }
+        
+        
         /*
         ArrayList <String> arreglo2 = new ArrayList<>();
         ArrayList <Double> arreglo3 = new ArrayList<>();
